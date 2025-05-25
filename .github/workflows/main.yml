@@ -1,0 +1,14 @@
+# .github/workflows/email-action.yml
+name: Email Action Test
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test-email-step:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 22f3000991@ds.study.iitm.ac.in
+        run: echo "Hello, world! This step is labeled with my email."
